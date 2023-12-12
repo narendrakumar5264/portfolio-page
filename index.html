@@ -13,6 +13,342 @@
 <link rel="stylesheet" href="portfolio.js">
 </head>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<style>  
+  body{
+      margin-top: 0px;
+      background-image: url('nj17.jpg'); 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover
+  } 
+  .upper{
+      margin-top: 5px;
+  padding-bottom: 1PX;
+     background-color: black;
+  
+      nav{
+       
+          
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+      nav ul li{
+          margin: 0px;
+          list-style-type: none;
+          display: inline-block;
+          padding: 10px 20px;
+      }
+      nav ul li a{
+          color: white;
+          font-weight: bold;
+      }
+      nav ul li a:hover{
+          color: crimson;
+          transition: 0.3s;
+      }
+  #name{
+      margin-bottom: 35px;
+      margin-top: 0px;
+  }
+  .button{
+   
+  }
+  button:hover{
+      transform: scale(1.2);
+      cursor: pointer;
+  
+  }
+  .first
+  {
+      display: flex;
+      justify-content: space-around;
+      margin: 23px 0px;
+  }
+  .first div{
+      width: 30%;
+  }
+  .left
+  {margin: 100px;
+      font-family: cursive;
+      font-size: 1.5rem;
+      color: WHITE;
+  
+  }
+  .img{
+      margin: 12px;
+      margin-right: 72px;
+      filter: drop-shadow(0 0 0.7rem rgb(255, 217, 0));
+  
+  }
+  nav ul li :hover{
+  font-size: 1rem;
+  }
+  .fa {
+      margin-left: 10px;
+      padding: 10px;
+      font-size: 30px;
+      width: 45px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+    
+    .fa:hover {
+        opacity: 0.7;
+    }
+   
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+    
+    .fa-google {
+      background: #dd4b39;
+      color: white;
+    }
+    
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+    
+    
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+  /* chat box start  */
+     body {font-family: Arial, Helvetica, sans-serif;}
+  * {box-sizing: border-box;}
+    .open-button {
+       background: url('chat.png');
+       background-size: cover;
+  background-position: center; 
+   background-repeat:no-repeat; 
+  
+   
+       padding : 30px 7px;  
+     
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      position: fixed;
+      bottom: 15px;
+      right: 5px;
+      border-left-width: 20px;
+      width: 40px;
+      margin-left: 0px;
+    }
+    
+    .open-button img{
+      padding: 100px;
+    }
+    .chat-popup {
+      background: url('peakpx.jpg');
+      background-size: cover;
+  background-position: center; 
+  background-repeat:no-repeat; 
+  border-radius: 25px;
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    
+  
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+     
+    }
+    
+  
+    .form-container textarea {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: solid;
+      border-radius: 20px;
+      background: #f1f1f1;
+      resize: none;
+      min-height: 200px;
+    }
+   
+    
+    
+    .form-container .btn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+    }
+    
+    .form-container .cancel {
+      background-color: red;
+    }
+    
+  
+    .form-container .btn:hover, .open-button:hover {
+      
+      opacity: 1;
+    }
+    /* chat box end */
+  
+  
+                /* chat box alert message */
+    .alert {
+      position: fixed;
+      bottom: 15px;
+      right: -119px;
+     border: solid;
+     border-radius: 12px;
+     
+     
+      margin-right: 200px;
+      padding: 12px;
+      margin-top: 1px;
+      padding-top: 0px;
+     padding-bottom: 0px;
+   
+      color: white;
+    }
+    
+    .closebtn {
+  
+      color: red;
+      
+      float: right;
+      font-size: 20px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    
+    .closebtn:hover {
+      color: black;
+    }
+   .chat
+   {
+    color: #04AA6D;
+  
+   
+   align-content: center;
+  
+   }
+  
+   *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  .modal-container .modal-btn {
+    border: none;
+    background: red;
+    padding: 10px 25px;
+    border-radius: 25px;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    transition: 0.4s;
+  }
+  .modal-container .modal-btn:hover {
+    background: #365690;
+  }
+  .modal-container .modal-content,
+  .modal-container .modal-backdrop {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in;
+  }
+  .modal-container .modal-close {
+    color: #aaa;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    padding-top: 3px;
+    background: #fff;
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+  .modal-container .modal-close:hover {
+    color: #333;
+  }
+  .modal-container .modal-content-btn {
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+    bottom: 20px;
+    right: 30px;
+    background: #446CB3;
+    color: #fff;
+    width: 50px;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 32px;
+    padding-top: 9px;
+    font-weight: normal;
+  }
+  .modal-container .modal-content-btn:hover {
+    color: #fff;
+    background: #365690;
+  }
+  .modal-container #modal-toggle {
+    display: none;
+  }
+  .modal-container #modal-toggle.active ~ .modal-backdrop, .modal-container #modal-toggle:checked ~ .modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+  }
+  .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+    opacity: 1;
+    background-color: white;
+    width: 400px;
+    height: 520px;
+    position: fixed;
+    left: calc(50% - 200px);
+    top: 12%;
+    border-radius: 4px;
+    z-index: 999;
+    pointer-events: auto;
+    cursor: auto;
+    visibility: visible;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+  }
+  .img1{
+    background-color:;
+    padding-top: 0px;
+    width: 400px;
+    height: 360px;
+  }
+  
+  @media (max-width: 400px) {
+    .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
+      left: 0;
+    }
+  </style>
 <body>
     <header>
     <div class="upper">
