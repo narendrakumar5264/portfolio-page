@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel=" icon" href="nj15-removebg-preview.png" type="image/x-icon">
+    
+<link rel="stylesheet" href="portfolio.css">
+<link rel="stylesheet" href="portfolio.js">
+</head>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<body>
+    <header>
+    <div class="upper">
+      <nav>
+            
+                    <h4 id="name"><img src="nj15-removebg-preview.png" alt="" width="50px" height="50px "><span style="color: whitesmoke;">NARENDRA</span> <span style="color: red;">KUMAR</span></h4>
+             
+                   
+                    <!-- <h4 align="center" style="color: green;" id="menu" > -->
+                       <h5 style="margin-top: 0px;"> <ul>
+                        <li><a href="#1" style="text-decoration: none;">Home</a></li>
+                    
+                        &nbsp;
+                        <li><a href="#2" style="text-decoration: none;">ABOUT</a></li>
+                
+                        &nbsp;
+                        <li><a href="#3"  style="text-decoration: none;" >PORTFOLIO</a></li>
+                       
+                        &nbsp;
+                        <li><a href="#4"  style="text-decoration: none;">PROJECTS</a></li>
+                        
+                        &nbsp;
+                        <li><a href="#5"  style="text-decoration: none;">SKILL</a></li>
+                        </h5>
+                    </ul>
+
+                    <div class="modal-container">
+                       <input id="modal-toggle" type="checkbox"> 
+                      <label class="modal-btn" for="modal-toggle">CONTACT ME</label> 
+                      <!-- <label class="modal-backdrop" for="modal-toggle"></label> -->
+                      <div class="modal-content">
+                       <h3  style="text-align: center; color: blue; border-style: solid;border-width: 0px;border-bottom-width: ; ">CONTACT ME</h3>
+                       
+                        <img src="nj (3).png"  class="img1"> 
+                        <h5 style="text-align: center; margin-top: 5px;">or <br>
+                 <a href="mailto: jangidnarendra858@gmail.com">jangidnarendra858@gmail.com</a><br>
+                   
+                        <label class="modal-content-btn" for="modal-toggle">OK</label>   
+                      </div>          
+                    </div> 
+                    
+                    </nav>
+    </div>   
+ </header>
+
+</table> 
+<main>
+<section class="first">
+    <div class="left"><h4>Hii, My name is <span style="color: aquamarine;">NARENDRA KUMAR</span> </h4>
+        <h4> And I am a passionate </h4>
+        <span id="element"></span>
+        <br>
+        <br>
+      <br><br><br>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="https://www.linkedin.com/in/narendra-kumar-9b2223257/" target="_blank" class="fa fa-linkedin"></a>
+        
+        <a href="https://www.instagram.com/narendrajangid2022/" target="_blank" class="fa fa-instagram"></a>
+        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, laudantium.</p> --></div>
+    <div class="right">
+    <img src="nj15-removebg-preview.png" alt="" class="img"></div>
+</section>
+
+</main>
+
+<button class="open-button" onclick="openForm()" ></button>
+<div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+   <h6> Hii! I am Narendra ....... <br> your Assistant. </h5>
+  </div>
+  
+
+<div class="chat-popup" id="myForm">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';" style=" font-size: 30px; line-height: 30px;" s>&times;</span> 
+  <form action="/action_page.php" class="form-container">
+    <h1 class="chat">Chat</h1>
+    
+
+    <label for="msg"><b style="color: blue;" >Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required  id="message"></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<section class="secondpage">
+</section>
+<script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+    var typed = new Typed('#element', {
+  // Waits 1000ms after typing "First"
+  strings: [' ^300 FRONT END WEB DEVELOPER.', '^300 UI AND UX DESIGNER .'],
+});
+
+  </script>
+
+</body>
+</html>
