@@ -10,7 +10,8 @@
     <link rel=" icon" href="nj15-removebg-preview.png" type="image/x-icon">
     
 <link rel="stylesheet" href="portfolio.css">
-<link rel="stylesheet" href="portfolio.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="portfolio.js"></script>
 </head>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <style>  
@@ -21,18 +22,27 @@
       background-attachment: fixed;
       background-size: cover
   } 
-  .upper{
-      margin-top: 5px;
+  #navbar{
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0px;
+    width:100%;
+      margin-top: 0px;
   padding-bottom: 1PX;
      background-color: black;
+     overflow: hidden; 
   }
       nav{
        
-          
+   
           display: flex;
           align-items: center;
           justify-content: space-between;
+  
       }
+  
+      
       nav ul li{
           margin: 0px;
           list-style-type: none;
@@ -51,9 +61,7 @@
       margin-bottom: 35px;
       margin-top: 0px;
   }
-  .button{
-   
-  }
+  
   button:hover{
       transform: scale(1.2);
       cursor: pointer;
@@ -348,11 +356,140 @@
     .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
       left: 0;
     }
+  }
+  
+                                                   /* SECOND page */    
+  
+  #about {
+    text-shadow: px 2px #ffbaba;
+  text-align: center;
+   margin: 0 6rem; 
+   font-size: 3.5rem;
+   padding: 1rem;
+   border-bottom: .1rem solid #fff4;
+   color: #fff;
+  }
+  
+  .second
+  {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0px 102px;
+      margin-bottom: 50px;
+      color: whitesmoke;
+  }
+  .left1{
+    border-right: .1rem solid #fff4;
+    padding-right: 120px;
+  
+  }
+  
+  .left1 h3{
+    font-size: 1.5rem;
+    color: rgb(233, 233, 165);
+    padding: 1rem 0;
+    font-weight: normal;
+  }
+  .left1 h3 span{
+    color: whitesmoke;
+    padding: 0 .5rem;
+  }
+  .download{
+    position: relative;
+    width: 180px;
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bolder;
+    border: 2px solid ridge;
+    border-color: #007bb5;
+    border-radius: 15px;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 40px;
+  }
+  .head1 {
+   font-size: 1.7rem;
+   padding: .7rem;
+    border-bottom: .2rem solid #fff4;
+    color: rgb(230, 112, 8);
+  }
+  .box{
+    padding:  0rem 0;
+  margin-left: 12px;
+  }
+  .box1{
+    width: 32rem;
+    margin: 2rem;
+    padding-left: 3rem;
+    border: .1rem solid rgb(129, 174, 23);
+    position: relative;
+  
+    box-shadow: 5px 5px 5px rgba(157, 216, 94, 0.934);
+    transition: 1s;
+  
+  }
+  .box1:hover{
+  
+  
+    width: 35rem;
+    margin: 3rem;
+    padding-left: 5rem;
+    border: .1rem solid rgb(102, 76, 205);
+    
+    box-shadow: 5px 5px 5px rgb(22, 22, 134);
+  }
+   .right1 .box .box1 span{
+  
+    position: absolute;
+        bottom: 80px;
+       
+        left: 190px;
+    font-size: .9rem;
+    background: rgb(250, 251, 255);
+    margin: 10px;
+    color: black;
+  border-radius: 20px;
+  
+    border-color: #a91c1c;
+    padding: .4rem 2.5rem ; box-shadow: 3px 3px 2px rgb(83, 17, 238);
+  transition: 3s;
+  }
+  
+  
+  #icon{
+    position: absolute;
+    top: -1.2rem;
+    left: -1.15rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 60%;
+    line-height: 2.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color : black;
+    background: yellow;
+    transition: 3s;
+  } 
+  
+  .right1 .box .box1 h3{
+  
+  font-size: 1rem;
+  position: relative;
+    color: burlywood;
+    text-align: center;
+  
+  
+  }
+  
+  
+  
   </style>
 <body>
     <header>
-    <div class="upper">
-      <nav>
+    <div id="navbar">
+    <nav>
             
                     <h4 id="name"><img src="nj15-removebg-preview.png" alt="" width="50px" height="50px "><span style="color: whitesmoke;">NARENDRA</span> <span style="color: red;">KUMAR</span></h4>
              
@@ -362,7 +499,7 @@
                         <li><a href="#1" style="text-decoration: none;">Home</a></li>
                     
                         &nbsp;
-                        <li><a href="#2" style="text-decoration: none;">ABOUT</a></li>
+                        <li><a href="#about" style="text-decoration: none;">ABOUT</a></li>
                 
                         &nbsp;
                         <li><a href="#3"  style="text-decoration: none;" >PORTFOLIO</a></li>
@@ -389,14 +526,14 @@
                         <label class="modal-content-btn" for="modal-toggle">OK</label>   
                       </div>          
                     </div> 
-                    
-                    </nav>
+                    </nav>    
+              
     </div>   
  </header>
 
 </table> 
 <main>
-<section class="first">
+<section class="first" id="1">
     <div class="left"><h4>Hii, My name is <span style="color: aquamarine;">NARENDRA KUMAR</span> </h4>
         <h4> And I am a passionate </h4>
         <span id="element"></span>
@@ -418,7 +555,7 @@
 <button class="open-button" onclick="openForm()" ></button>
 <div class="alert">
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-   <h6> Hii! I am Narendra ....... <br> your Assistant. </h5>
+   <h6> Hii! I am Narendra ..... <br> your Assistant. </h5>
   </div>
   
 
@@ -435,10 +572,70 @@
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
+<br>
+<h4 id="about"><span style="color: yellowgreen;">About</span> Me ?</h4>
+<section class="second">
+ 
+<div class="left1"> 
+  <h1  class="head1">Personnal Info</h1>
+<h3><span>Name  :</span> Narendra Kumar</h3>
+<h3><span>Age :</span> 22</h3>
+<h3><span>Quilification :</span>Btech in computer science</h3>
+<h3><span>Langauge :</span>Hindi/English</h3>
+<a href="resume.png" download=""> <button class="download"> Download CV</button></a>
+</div>
 
-<section class="secondpage">
+
+<div class="right1">
+  <h1 class="head1">My Education</h1>
+
+  <div class="box">
+  <div class="box1">
+<i class="fas fa-graduation-cap" id="icon"></i>
+<span>2022 - 2026</span>
+
+<h3> Btech : in computer sciece</h3>
+
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque!</p>
+
+  </div>
+
+  <div class="box1">
+    <i class="fas fa-graduation-cap" id="icon"></i>
+    <span>2020</span>
+     <h3> Higher Secondary Education </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, neque!</p>
+    
+      </div>
+    
+  <div class="box1">
+    <i class="fas fa-graduation-cap" id="icon"></i>
+    <span>2018</span>
+     <h3> Intermediate Education </h3>
+   
+    <p>I have completed my Intermediate Education from 
+      tagoore  Sr. Sec School ,degana ,nagaur ,Rajasthan</p>
+    
+      </div>
+    </div>
+</div>
+
 </section>
 <script>
+  
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+    var typed = new Typed('#element', {
+  // Waits 1000ms after typing "First"
+  strings: [' ^300 FRONT END WEB DEVELOPER.', '^300 UI AND UX DESIGNER .'],
+});
+
     function openForm() {
     document.getElementById("myForm").style.display = "block";
   }
@@ -451,7 +648,9 @@
   strings: [' ^300 FRONT END WEB DEVELOPER.', '^300 UI AND UX DESIGNER .'],
 });
 
+
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </body>
 </html>
